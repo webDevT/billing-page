@@ -55,18 +55,49 @@
 				<img src="img/edit.svg" alt="" class="edit-icon">
 			</div>
 
-			<a class="button">
+			<div class="button">
 				Cancel plan
-			</a>
+			</div>
 		</div>
 	</div>
 </div>
 <!-- end page content -->
 
- <script
-  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+<!-- start modal -->
+<div class="modal">
+	<div class="modal-content">
+		<div class="modal__text">
+			Are you sure that you want to cancel subscription?
+		</div>
+
+		<div class="modal__buttons">
+			<a href="cancel.html" class="modal__button modal__button--yes">
+				Yes
+			</a>
+			<div class="modal__button modal__button--no">
+				No
+			</div>
+		</div>
+		
+	</div>
+</div>
+<!-- end modal -->
+
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
   crossorigin="anonymous"></script>
-	<script src="js/main.js"></script>
+	<script>
+		$('.button').click(function(){
+			$('.modal').fadeIn();
+		})
+	</script>
+
+<script>
+	$('.modal__button--no').click(function(){
+		$('.modal').fadeOut();
+	})
+</script>
+
 </body>
 </html>

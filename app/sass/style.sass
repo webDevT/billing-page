@@ -105,10 +105,63 @@ body
     margin-left: 33px
     opacity: 0.5
     cursor: pointer
-
 //end page content
 
-
+//start modal style
+.modal 
+    position: fixed 
+    top: 0
+    left: 0 
+    width: 100% 
+    z-index: 99
+    background: rgba(0, 0, 0, 0.5)
+    height: 100%
+    display: none
+.modal-content 
+    background: #fff
+    width: 280px 
+    height: auto 
+    padding: 30px 
+    border-radius: 10px 
+    position: absolute 
+    top: 50% 
+    left: 50% 
+    transform: translateY(-50%) translateX(-50%)
+    text-align: center
+    font-size: 18px
+    box-shadow: 0px 0px 5px rgba(0,0,0, 0.5)
+.modal__text 
+    font-weight: 500 
+.modal__buttons 
+    display: flex
+    justify-content: center
+    margin-top: 20px
+.modal__button 
+    width: 100px 
+    height: 40px 
+    border-radius: 10px 
+    display: flex 
+    justify-content: center 
+    align-items: center
+    border: 1px solid #c8c8c8
+    margin: 0 5px
+    text-decoration: none
+    color: #100f21
+    cursor: pointer
+    
+.modal__button--yes
+   color: #cf222e
+.modal__button--no 
+    color: #2da44e
+//end modal style
+.title 
+    font-size: 28px
+    text-align: center
+.cancele-content 
+    min-height: calc(100vh - 93px )
+    display: flex 
+    align-items: center 
+    justify-content: center
 @import "media"
 
 
